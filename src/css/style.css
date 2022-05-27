@@ -60,7 +60,7 @@ body {
     border: 0;
 }
 #star {
-    background: url('/src/img/star.png');
+    background: url('./src/img/star.png');
     width: 35px;
     height: 35px;
     position: absolute;
@@ -72,14 +72,14 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: url('/src/img/world.jpg');
+    background: url('./src/img/world.jpg');
     background-position: center left;
     
 }
 #block {
     width: 45px;
     height: 100vh;
-    background: url('/src/img/blockbg.jpg');
+    background: url('./src/img/blockbg.jpg');
     background-position: center;
     background-size: contain;
     position: relative;
@@ -87,7 +87,7 @@ body {
 #hole {
     width: 46px;
     height: 193px;
-    background: url('/src/img/holebg.jpg');
+    background: url('./src/img/holebg.jpg');
     background-size: contain;
     position: relative;
     top: -500px;
@@ -98,7 +98,7 @@ body {
     height: 30px;
     position: absolute;
     border-radius: 50%;
-    background: url('/src/img/bird.png');
+    background: url('./src/img/bird.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
