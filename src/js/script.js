@@ -102,7 +102,7 @@ function setEventListeners() {
 }
 
 function gameOver() {
-  new Audio("/src/sounds/sounds_gameover.wav").play();
+  new Audio("/sounds/sounds_gameover.wav").play();
   gameStopped = true;
   showGameOverScreen();
   stopBlockAnimation();
@@ -165,7 +165,7 @@ function characterJump() {
     changeGameState({ diff: -3, direction: "up" });
 
     if (jumpCount > 20) {
-      new Audio("../sounds/sounds_fly.mp3").play();
+      new Audio("/sounds/sounds_fly.mp3").play();
 
       clearInterval(jumpInterval);
       Jumping = false;
@@ -187,7 +187,7 @@ function handleStarDetection() {
   if (star.style.display === "none") return;
 
   if (detectColision(character, star)) {
-    new Audio("../sounds/sounds_star.wav").play();
+    new Audio("/sounds/sounds_star.wav").play();
     scoreTotal += 150;
     hideStar();
     changeScoreUi();
@@ -251,7 +251,7 @@ function handleCharacterCollision() {
 
     soundCount++;
     if (soundCount > 35) {
-      new Audio("../sounds/sounds_hole.wav").play();
+      new Audio("/sounds/sounds_hole.wav").play();
       soundCount = 0;
     }
     changeScoreUi();
