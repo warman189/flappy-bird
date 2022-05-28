@@ -1,3 +1,3 @@
 # flappy-bird
-test build 
+test build for mobile.
 https://warman189.github.io/flappy-bird/
