@@ -103,21 +103,40 @@ body {
     background-repeat: no-repeat;
 }
 .go-up {
-    animation: rotateUp 0.2s;
-    animation-fill-mode:forwards;
+    -webkit-animation: rotateUp 0.2s;
+            animation: rotateUp 0.2s;
+    -webkit-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
 }
 .go-down {
-    animation: rotateDown 0.2s;
-    animation-fill-mode:forwards;
+    -webkit-animation: rotateDown 0.2s;
+            animation: rotateDown 0.2s;
+    -webkit-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes rotateUp {
+    0% { -webkit-transform: rotate( 0deg ); transform: rotate( 0deg ) }
+    100% { -webkit-transform: rotate( -35deg ); transform: rotate( -35deg ) }
 }
 
 @keyframes rotateUp {
-    0% { transform: rotate( 0deg ) }
-    100% { transform: rotate( -35deg ) }
+    0% { -webkit-transform: rotate( 0deg ); transform: rotate( 0deg ) }
+    100% { -webkit-transform: rotate( -35deg ); transform: rotate( -35deg ) }
+}
+@-webkit-keyframes rotateDown {
+    0% { -webkit-transform: rotate( 0deg ); transform: rotate( 0deg ) }
+    100% { -webkit-transform: rotate( 35deg ); transform: rotate( 35deg ) }
 }
 @keyframes rotateDown {
-    0% { transform: rotate( 0deg ) }
-    100% { transform: rotate( 35deg ) }
+    0% { -webkit-transform: rotate( 0deg ); transform: rotate( 0deg ) }
+    100% { -webkit-transform: rotate( 35deg ); transform: rotate( 35deg ) }
+}
+
+
+@-webkit-keyframes blockAnimation {
+    0% { left: 100vw; }
+    100% { left: -50px; }
 }
 
 
@@ -127,24 +146,50 @@ body {
 }
 
 
+@-webkit-keyframes backgroundAnimation {
+    0% { background-position-x: 100vw }
+    100% { background-position-x: 0 }
+}
+
+
 @keyframes backgroundAnimation {
     0% { background-position-x: 100vw }
     100% { background-position-x: 0 }
 }
+@-webkit-keyframes starAnimation1 {
+    0% { left: 50vw; }
+    100% { left: -50px; }
+}
 @keyframes starAnimation1 {
     0% { left: 50vw; }
+    100% { left: -50px; }
+}
+@-webkit-keyframes starAnimation2 {
+    0% { left: 60vw; }
     100% { left: -50px; }
 }
 @keyframes starAnimation2 {
     0% { left: 60vw; }
     100% { left: -50px; }
 }
+@-webkit-keyframes starAnimation3 {
+    0% { left: 70vw; }
+    100% { left: -50px; }
+}
 @keyframes starAnimation3 {
     0% { left: 70vw; }
     100% { left: -50px; }
 }
+@-webkit-keyframes starAnimation4 {
+    0% { left: 80vw; }
+    100% { left: -50px; }
+}
 @keyframes starAnimation4 {
     0% { left: 80vw; }
+    100% { left: -50px; }
+}
+@-webkit-keyframes starAnimation5 {
+    0% { left: 90vw; }
     100% { left: -50px; }
 }
 @keyframes starAnimation5 {
